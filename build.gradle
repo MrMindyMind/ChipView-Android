@@ -21,11 +21,18 @@ android {
     }
 }
 
+    allprojects {
+	repositories {
+		maven { url "https://jitpack.io" }
+	}
+    }
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.github.MrMindyMind:ChipView-Android:-SNAPSHOT'
     testCompile 'junit:junit:4.12'
 }
