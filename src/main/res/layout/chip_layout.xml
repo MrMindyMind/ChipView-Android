@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:paddingLeft="@dimen/non_deletable_label_padding"
-        android:paddingRight="@dimen/non_deletable_label_padding"
+        android:paddingStart="@dimen/non_deletable_label_padding"
+        android:paddingEnd="@dimen/non_deletable_label_padding"
         android:textSize="@dimen/text_size"/>
 
     <ImageView
