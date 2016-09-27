@@ -140,17 +140,17 @@ public class ChipView extends RelativeLayout implements View.OnClickListener {
     private void updateTextViewPadding() {
         int[] textViewPadding = {
                 ViewCompat.getPaddingStart(textView),
-                ViewCompat.getPaddingEnd(textView),
                 textView.getPaddingTop(),
+                ViewCompat.getPaddingEnd(textView),
                 textView.getPaddingBottom()
         };
 
         if (isDeletable) {
-            textViewPadding[1] = (int) getResources().getDimension(
+            textViewPadding[2] = (int) getResources().getDimension(
                     R.dimen.deletable_label_padding);
             deleteChipImageView.setVisibility(View.VISIBLE);
         } else {
-            textViewPadding[1] = (int) getResources().getDimension(
+            textViewPadding[2] = (int) getResources().getDimension(
                     R.dimen.non_deletable_label_padding);
             deleteChipImageView.setVisibility(View.GONE);
         }
