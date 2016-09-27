@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chipLayout"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:background="@drawable/chip_background"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/non_deletable_label_padding"
+        android:paddingRight="@dimen/non_deletable_label_padding"
+        android:textSize="@dimen/text_size"/>
+
+    <ImageView
+        android:id="@+id/deleteChipImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_delete_chip"
+        android:clickable="true"
+        android:visibility="gone"/>
+
+</LinearLayout>
